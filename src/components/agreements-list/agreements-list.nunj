@@ -1,0 +1,19 @@
+{% from "../checkbox-field/checkbox-field.nunj" import checkboxField %}
+
+<ul class="agreements-list">
+  <li class="agreements-list__item">
+    {{ checkboxField ({
+      id: 'save-card',
+      label: 'Save information of this credit card'
+    }) }}
+  </li>
+
+  <li class="agreements-list__item">
+    {{ checkboxField ({
+      id: 'agrees-policy',
+      label: 'I accept the&nbsp;<a class="link" href="#">terms and conditions</a>&nbsp;and the&nbsp;
+        <a class="link" href="#">Privacy Policies</a>',
+      checked: true
+    }) }}
+  </li>
+</ul>

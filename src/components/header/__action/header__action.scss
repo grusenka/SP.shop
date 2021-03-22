@@ -1,0 +1,13 @@
+.header__action:last-child {
+  display: none;
+}
+
+@include max-screen('768px') {
+  .header__action:not(:last-child) {
+    display: none;
+  }
+
+  .header__action:last-child {
+    display: inline-block;
+  }
+}

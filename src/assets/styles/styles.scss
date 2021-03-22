@@ -1,15 +1,98 @@
 // ======= GLOBAL =======
-@import 'constants';
 @import 'lib/base';
 @import 'fonts';
 @import 'reset';
 @import 'global';
 @import 'layout';
-// @import 'controls';
 
 // ======= COMPONENTS =======
-@import '../../components/header/header';
-@import '../../components/button/button';
+@import '../../components/action-button/action-button';
+@import '../../components/action-button/___counter/action-button__counter';
+@import '../../components/action-button/_icon/_add/action-button_icon_add';
+@import '../../components/action-button/_icon/_basket/action-button_icon_basket';
+@import '../../components/action-button/_icon/_menu/action-button_icon_menu';
+@import '../../components/action-button/_icon/_remove/action-button_icon_remove';
+@import '../../components/action-button/_icon/_search/action-button_icon_search';
+@import '../../components/action-button/_size/_s/action-button_size_s';
 
-// ======= PAGES =======
-@import 'pages/main';
+@import '../../components/agreements-list/__item/agreement-list__item';
+
+@import '../../components/basket/__item/basket__item';
+
+@import '../../components/basket-navigation/basket-navigation';
+
+@import '../../components/basket-position/basket-position';
+@import '../../components/basket-position/__action/basket-position__action';
+@import '../../components/basket-position/__actions/basket-position__actions';
+@import '../../components/basket-position/__content/basket-position__content';
+@import '../../components/basket-position/__counter/basket-position__counter';
+@import '../../components/basket-position/__image/basket-position__image';
+@import '../../components/basket-position/__price/basket-position__price';
+@import '../../components/basket-position/__price-group/basket-position__price-group';
+@import '../../components/basket-position/__remove/basket-position__remove';
+@import '../../components/basket-position/__title/basket-position__title';
+
+@import '../../components/button/button';
+@import '../../components/button/_type/_secondary/button_type_secondary';
+
+@import '../../components/checkbox-field/__label/checkbox-field__label';
+
+@import '../../components/content-section/content-section';
+@import '../../components/content-section/__header/content-section__header';
+
+@import '../../components/credit-card/credit-card';
+@import '../../components/credit-card/__group/credit-card__group';
+@import '../../components/credit-card/__field/credit-card__field';
+
+@import '../../components/form/__actions/form__actions';
+
+@import '../../components/form-field-group/form-field-group';
+@import '../../components/form-field-group/__action/form-field-group__action';
+
+@import '../../components/header/header';
+@import '../../components/header/__action/header__action';
+
+@import '../../components/link/link';
+
+@import '../../components/main-content/main-content';
+@import '../../components/main-content/__content/main-content__content';
+@import '../../components/main-content/__navigation/main-content__navigation';
+@import '../../components/main-content/__sidebar/main-content__sidebar';
+
+@import '../../components/order-cost/__item/order-cost__item';
+@import '../../components/order-cost/__text/order-cost__text';
+@import '../../components/order-cost/__text/_marked/order-cost__text_marked';
+
+@import '../../components/radio-field/__label/radio-field__label';
+@import '../../components/radio-field/__label/_icon/_pay-pal/radio-field_icon_pay-pal';
+
+@import '../../components/sidebar-section/sidebar-section';
+@import '../../components/sidebar-section/__header/sidebar-section__header';
+@import '../../components/sidebar-section/_type/_secondary/sidebar-section_type_secondary';
+
+@import '../../components/site-navigation/site-navigation';
+@import '../../components/site-navigation/__item/site-navigation__item';
+
+@import '../../components/step/step';
+@import '../../components/step/__path/step__path';
+@import '../../components/step/__path/_current/step__path_current';
+@import '../../components/step/__path/_done/step__path_done';
+@import '../../components/step/__path/_inactive/step__path_inactive';
+@import '../../components/step/__point/step__point';
+@import '../../components/step/__point/_current/step__point_current';
+@import '../../components/step/__point/_done/step__point_done';
+@import '../../components/step/__point/_inactive/step__point_inactive';
+@import '../../components/step/__text/step__text';
+
+@import '../../components/tabs/__control/tab__control';
+@import '../../components/tabs/__controls/tabs__controls';
+
+@import '../../components/text-field/__label/text-field__label';
+@import '../../components/text-field/__input/text-field__input';
+@import '../../components/text-field/__tooltip/text-field__tooltip';
+@import '../../components/text-field/__input/_size/_l/text-field__input_size_l';
+@import '../../components/text-field/__input/_size/_m/text-field__input_size_m';
+@import '../../components/text-field/__input/_size/_s/text-field__input_size_s';
+
+@import '../../components/user-menu/user-menu';
+@import '../../components/user-menu/__item/user-menu__item';

@@ -1,0 +1,11 @@
+.basket-position__remove {
+  display: inline-block;
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  background-image: inline('basket-position__remove.svg');
+  background-color: #ffffff;
+  background-position: 50%;
+  border: none;
+  font-size: 0;
+}

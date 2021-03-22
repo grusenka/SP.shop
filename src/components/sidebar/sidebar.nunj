@@ -1,0 +1,50 @@
+{% from "../basket-position/basket-position.nunj" import basketPosition %}
+{% from "../text-field/text-field.nunj" import textField %}
+{% from "../button/button.nunj" import button %}
+{% from "../order-cost/order-cost.nunj" import orderCost %}
+
+<aside class="sidebar">
+  <section class="sidebar-section">
+    <h2 class="sidebar-section__header">My basket</h2>
+
+    <ul class="basket">
+      {% for item in basketItems %}
+        <li class="basket__item">
+          {{ basketPosition({
+            image: item.image,
+            imageAlt: item.imageAlt,
+            title: item.title,
+            price: item.price,
+            count: item.count
+          }) }}
+        </li>
+      {% endfor %}
+    </ul>
+
+  </section>
+
+  <section class="sidebar-section">
+    <h2 class="sidebar-section__header">Promo code</h2>
+
+    <form class="form">
+      <div class="form-field-group">
+        {{ textField ({
+          className: "text-field__input_size_m",
+          type: 'text',
+          placeholder: 'Placeholder text'
+        }) }}
+
+        {{  button ({
+          className: 'form-field-group__action',
+          children: 'Apply'
+        }) }}
+      </div>
+    </form>
+  </section>
+
+  <section class="sidebar-section sidebar-section_type_secondary">
+    <h2 class="sidebar-section__header visually-hidden">Order cost</h2>
+
+    {{ orderCost() }}
+  </section>
+</aside>

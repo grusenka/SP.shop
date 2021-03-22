@@ -1,0 +1,8 @@
+.order-cost__item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.order-cost__item:not(:last-child) {
+  margin-bottom: 20px;
+}

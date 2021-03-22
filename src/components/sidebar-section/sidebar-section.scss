@@ -1,0 +1,7 @@
+.sidebar-section {
+  padding: 40px;
+}
+
+.sidebar-section:not(:last-child) {
+  border-bottom: 1px solid #cfcfcf;
+}

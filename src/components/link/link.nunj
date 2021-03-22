@@ -1,0 +1,9 @@
+{% macro link(props) %}
+<a
+  class="link{% if props.className %} {{ props.className }}{% endif %}"
+  href=={{ props.href }}}
+  aria-label={{ props.ariaLabel }}}
+>
+  {{ props.children }}
+</a>
+{% endmacro %}

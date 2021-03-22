@@ -1,0 +1,8 @@
+.credit-card__group {
+  display: flex;
+  align-items: flex-end;
+}
+
+.credit-card__group:not(:last-child) {
+  margin-bottom: 20px;
+}

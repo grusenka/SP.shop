@@ -1,0 +1,15 @@
+{% from "../step/step.nunj" import step %}
+
+<ul class="basket-navigation main-content__navigarion">
+  {% for item in basketNavigationItems %}
+    {{
+      step ({
+        pointClassName: item.pointClassName,
+        pathClassName: item.pathClassName,
+        title: item.title,
+        point: item.point,
+        path: item.path
+      })
+    }}
+  {% endfor %}
+</ul>

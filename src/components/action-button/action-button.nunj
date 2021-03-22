@@ -1,0 +1,7 @@
+{% macro actionButton(props) %}
+<button class="action-button{% if props.className %} {{ props.className }}{% endif %}">
+  {{ props.children }}
+
+  {% if props.counter %} <span class="action-button__counter">{{ props.counter }}</span>{% endif %}
+</button>
+{% endmacro %}

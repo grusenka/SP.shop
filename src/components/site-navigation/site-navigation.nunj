@@ -1,0 +1,14 @@
+{% from "../link/link.nunj" import link %}
+
+{% macro siteNavigation(active=false) %}
+<ul class="site-navigation">
+	{% for item in siteNavigationItems %}
+		<li class="site-navigation__item">
+			{{ link ({
+				href: item.path,
+				children: item.name
+			}) }}
+		</li>
+	{% endfor %}
+</ul>
+{% endmacro %}

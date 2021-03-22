@@ -1,0 +1,69 @@
+{% from "../text-field/text-field.nunj" import textField %}
+
+<div class="credit-card">
+    <div class="credit-card__group">
+      <div class="credit-card__field">
+        {{ textField ({
+          className: "text-field__input_size_l",
+          label: 'Name on card',
+          id: 'name',
+          placeholder: 'Placeholder text'
+        }) }}
+      </div>
+    </div>
+
+    <div class="credit-card__group">
+      <div class="credit-card__field">
+        {{ textField ({
+          className: "text-field__input_size_s",
+          label: 'Card number',
+          type: 'number',
+          id: 'card-number',
+          placeholder: 'Placeholder text'
+        }) }}
+      </div>
+
+      <div class="credit-card__field">
+        {{ textField({
+          className: "text-field__input_size_s",
+          type: 'number'
+        }) }}
+      </div>
+
+      <div class="credit-card__field">
+        {{ textField({
+          className: "text-field__input_size_s",
+          type: 'number'
+        }) }}
+      </div>
+
+      <div class="credit-card__field">
+        {{ textField({
+          className: "text-field__input_size_s",
+          type: 'number'
+        }) }}
+      </div>
+    </div>
+
+    <div class="credit-card__group">
+      <div class="credit-card__field">
+        {{ textField ({
+          className: "text-field__input_size_s",
+          type: 'number',
+          label: 'Expire date',
+          id: 'number'
+        }) }}
+      </div>
+
+      <div class="credit-card__field">
+        {{ textField ({
+          className: "text-field__input_size_s",
+          type: 'text',
+          label: 'CVV code',
+          id: 'cvv-code',
+          tooltip: true
+        }) }}
+      </div>
+    </div>
+  </form>
+</div>

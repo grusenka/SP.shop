@@ -1,0 +1,25 @@
+{% from "../action-button/action-button.nunj" import actionButton %}
+
+<ul class="user-menu">
+  <li class="user-menu__item header__action">
+    {{ actionButton ({
+      className: 'action-button_icon_search',
+      children: 'Поиск'
+    }) }}
+  </li>
+
+  <li class="user-menu__item header__action">
+    {{ actionButton ({
+      className: 'action-button_icon_basket',
+      children: 'Корзина',
+      counter: '2'
+    }) }}
+  </li>
+
+  <li class="user-menu__item header__action">
+    {{ actionButton ({
+      className: 'action-button_icon_menu',
+      children: 'Меню'
+    }) }}
+  </li>
+</ul>

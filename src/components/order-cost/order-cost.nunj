@@ -1,0 +1,10 @@
+{% macro orderCost(props) %}
+<ul class="order-cost">
+  {% for item in orderCostItems %}
+    <li class="order-cost__item">
+      <span class="order-cost__text{% if (loop.index == 4) %} order-cost__text{{ item.markedMod }}{% endif %}">{{ item.title }}</span>
+      <span class="order-cost__text{% if (loop.index == 4) %} order-cost__text{{ item.markedMod }}{% endif %}">{{ item.price }}</span>
+    </li>
+  {% endfor %}
+</ul>
+{% endmacro %}

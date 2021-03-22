@@ -1,0 +1,9 @@
+.main-content__sidebar {
+  border-left: 1px solid #cfcfcf;
+}
+
+@include max-screen('768px') {
+  .main-content__sidebar {
+    display: none;
+  }
+}

@@ -1,5 +1,15 @@
+{% from "../site-navigation/site-navigation.nunj" import siteNavigation %}
+
 <div class="header">
-	<div class="container">
-		{{ menu() }}
+	<div class="container container_header">
+		<a class="logo" href="index">
+			<img src={% inline 'logo.svg' %} alt="SP.shop logo"/>
+		</a>
+
+		<nav class="main-navigation">
+			{{ siteNavigation() }}
+		</nav>
+
+		{% include '../user-menu/user-menu.nunj' %}
 	</div>
 </div>

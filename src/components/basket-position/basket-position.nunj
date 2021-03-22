@@ -1,0 +1,31 @@
+{% from "../action-button/action-button.nunj" import actionButton %}
+
+{% macro basketPosition(props) %}
+<div class="basket-position">
+  <img class="basket-position__image" src="/assets/images/content/{{ props.image }}" alt={{ props.imageAlt }}/>
+
+  <div class="basket-position__content">
+    <h3 class="basket-position__title">{{ props.title }}</h3>
+
+    <div class="basket-position__price-group">
+      <div class="basket-position__actions">
+        {{ actionButton ({
+          className: 'action-button_icon_remove action-button_size_s basket-position__action',
+          children: 'Remove'
+        }) }}
+
+        <span class="basket-position__counter">{{ props.count }}</span>
+
+        {{ actionButton ({
+          className: 'action-button_icon_add action-button_size_s basket-position__action',
+          children: 'Add'
+        }) }}
+      </div>
+
+      <span class="basket-position__price">{{ props.price }}</span>
+    </div>
+  </div>
+
+  <button class="basket-position__remove">Удалить</button>
+</div>
+{% endmacro %}

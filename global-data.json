@@ -1,26 +1,92 @@
 {
-	"menuItems": [
+	"siteNavigationItems": [
 		{
-			"name": "Menu Item 1",
+			"name": "Women's",
 			"path": "#"
 		},
 		{
-			"name": "Menu Item 2",
+			"name": "Men's",
 			"path": "#"
 		},
 		{
-			"name": "Menu Item 3",
+			"name": "Home",
+			"path": "#"
+		},
+		{
+			"name": "Travel",
+			"path": "#"
+		},
+		{
+			"name": "Beauty",
+			"path": "#"
+		},
+		{
+			"name": "Sale",
 			"path": "#"
 		}
 	],
-	"someData": [
+	"basketNavigationItems": [
 		{
-			"title": "Item 1",
-			"text": "Desc 1"
+			"title": "Account",
+			"point": 1,
+			"path": true,
+			"pointClassName": "step__point_done",
+			"pathClassName": "step__path_done"
 		},
 		{
-			"title": "Item 2",
-			"text": "Desc 2"
+			"title": "Shipping",
+			"point": 2,
+			"path": true,
+			"pointClassName": "step__point_done",
+			"pathClassName": "step__path_done"
+		},
+		{
+			"title": "Billing",
+			"point": 3,
+			"path": true,
+			"pointClassName": "step__point_current",
+			"pathClassName": "step__path_inactive"
+		},
+		{
+			"title": "Review",
+			"point": 4,
+			"path": false,
+			"pointClassName": "step__point_inactive"
+		}
+	],
+	"basketItems": [
+		{
+			"title": "Amet minim mollit non deserunt ullamco est sit",
+			"image": "jacket.png",
+			"imageAlt": "jacket",
+			"price": "$ 525",
+			"count": 1
+		},
+		{
+			"title": "Amet minim mollit non",
+			"image": "sneakers.png",
+			"imageAlt": "sneakers",
+			"price": "$ 525",
+			"count": 1
+		}
+	],
+	"orderCostItems": [
+		{
+			"title": "Subtotal",
+			"price": "$ 1 050"
+		},
+		{
+			"title": "Tax",
+			"price": "$ 100"
+		},
+		{
+			"title": "Shipping",
+			"price": "$ 150"
+		},
+		{
+			"title": "Total",
+			"price": "$ 1 300",
+			"markedMod": "_marked"
 		}
 	]
 }

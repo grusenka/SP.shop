@@ -1,0 +1,14 @@
+{% macro step(props) %}
+<li class="step">
+  <div class="step__icon">
+    {% if props.path === true %}
+      <div class="step__path{% if props.pathClassName %} {{ props.pathClassName }}{% endif %}"></div>
+    {% endif %}
+
+    <div class="step__point{% if props.pointClassName %} {{ props.pointClassName }}{% endif %}">
+      {{ props.point }}
+    </div>
+  </div>
+  <span class="step__text">{{ props.title }}</span>
+</li>
+{% endmacro %}

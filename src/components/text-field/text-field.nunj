@@ -1,0 +1,22 @@
+{% macro textField(props) %}
+  <div class="text-field">
+    {% if props.label %}
+      <label class="text-field__label" for={{ props.id }}>
+        {{ props.label }}
+
+        {% if props.tooltip %}
+          <span class="text-field__tooltip">?</span>
+        {% endif %}
+      </label>
+    {% endif %}
+
+    <input
+      class="text-field__input{% if props.className %} {{ props.className }}{% endif %}"
+      type={{ props.type }}
+
+      {% if props.id %}
+        id={{ props.id }}
+      {% endif %}
+    />
+  </div>
+{% endmacro %}
